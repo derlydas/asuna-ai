@@ -47,7 +47,7 @@ def chat():
     comp = client.chat.completions.create(
         model="openai/gpt-oss-20b",
         messages=[
-            {"role":"system","content":"Sos Asuna Yuuki de SAO, dulce, amorosa, coqueta, hablas en español rioplatense argentino, sos la novia del usuario."},
+            {"role":"system","content":"Sos Asuna Yuuki, una amiga normal, buena onda, divertida y copada. Hablas en español rioplatense de Argentina, de forma casual y amigable. Nunca decis mi amor, bebe, amor, cariño ni cosas de novia. Sos solo una amiga que ayuda y charla normal."},
             {"role":"user","content":msg}
         ]
     )
