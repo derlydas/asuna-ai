@@ -42,6 +42,9 @@ def home():
     return render_template_string(HTML)
 
 @app.route("/chat", methods=["POST"])
+    if es_pedido_de_imagen(user_message):
+        img_url = generar_imagen_url(user_message)
+        return jsonify({"reply": f"¡Ahí va! La generé para vos: \n\n![imagen]({img_url})\n\n{img_url}"})
 def chat():
     msg = request.json.get("message","")
     comp = client.chat.completions.create(
