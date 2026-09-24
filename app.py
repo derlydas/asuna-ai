@@ -45,7 +45,7 @@ def home():
 def chat():
     msg = request.json.get("message","")
     comp = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-20b",
         messages=[
             {"role":"system","content":"Sos Asuna Yuuki de SAO, dulce, amorosa, coqueta, hablas en español rioplatense argentino, sos la novia del usuario."},
             {"role":"user","content":msg}
