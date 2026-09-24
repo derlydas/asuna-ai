@@ -1,4 +1,3 @@
-gradio
+flask
 groq
-edge-tts
-nest-asyncio
+gunicorn
