@@ -1,4 +1,0 @@
-gradio
-groq
-edge-tts
-nest-asyncio
